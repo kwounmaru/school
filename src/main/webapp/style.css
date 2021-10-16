@@ -1,0 +1,213 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300,400,700";
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+body {
+    background: #2F998D;
+    background: -webkit-linear-gradient(to left, #47E5D3 , #2F998D);
+    background:         linear-gradient(to left, #47E5D3 , #2F998D);
+}
+.rwd-table {
+  margin-top: 270px;
+  min-width: 300px;
+  background: #184D47;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.rwd-table th {
+  display: none;
+}
+.rwd-table td {
+  display: block;
+}
+.rwd-table td:first-child {
+  padding-top: .5em;
+}
+.rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+}
+.rwd-table th, .rwd-table td {
+  text-align: center;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child, .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child, .rwd-table td:last-child {
+    padding-right: 0;
+  }
+}
+
+body {
+  padding: 0 2em;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #34495E;
+}
+
+tr {
+  border-color: #46637f;
+}
+th, td {
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    padding: 1em !important;
+  }
+}
+.rwd-table th, .rwd-table td:before {
+  color: #EEBB4D;
+}
+.header {
+	padding: 30px 25px;
+	position: relative;
+}
+.header_img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.header_logo, .header_menu{
+	display: inline-block;
+	vertical-align: middle;
+}
+.header_title {
+	font-family: 'Single Day', cursive;
+	font-size: 30px;
+	margin: 0;
+	margin-left: 10px;
+	display: inline-block;
+	line-height: 18px;
+	vertical-align: middle;
+	color: #006640
+}
+.header_menu {
+	float: right;
+}
+.header_elenco {
+	padding: 4px;
+	margin: 0;
+	list-style: none;
+}
+.header_el {
+	padding: 0 5px;
+	display: inline-block;
+}
+.btn{
+	background-color:#2F998D;
+	border-radius: .4em;
+	padding: 10px 25px;
+	color: #fff;
+	text-decoration-line: none;
+	box-shadow: 0px 18px 13px -6px rgba(0, 0, 0, 0.2);
+	transition: all 0.4s;
+-webkit-transition: all 0.4s;
+-moz-transition: all 0.4s;
+-ms-transition: all 0.4s;
+-o-transition: all 0.4s;
+}
+.all
+{
+    width: 900px;
+    height: 960px;
+    margin: 50px auto 25px;
+    padding: 20px 0 30px;
+    border-radius: .4em;
+
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+}
+.myname
+{
+    text-align: center;
+
+    color: #fff;
+    text-shadow: 1px 1px rgba(0,0,0,.35);
+}
+
+.leftside {
+    float: left;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 350px;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Gugi', cursive;
+}
+.front {
+    position: absolute;
+    top: 0;
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    font-size: 1em;
+    text-transform: uppercase;    
+    line-height: 34px;
+    background: #fff;
+    color: #000;
+}
+.leftside .front{
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);    
+    background: #fff;
+    color: #184D47;
+}
+.time{
+    position: absolute;
+    width: 300px;
+    height:80px;
+    margin: auto;
+    top:0;bottom:0;right:0;left:0;
+}
+.time-cont{
+    font-size: 105px;
+    position: relative;
+    height: 60px;
+    width: 120px;
+}
+.date{
+    position: absolute;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-left: 26px;
+}
